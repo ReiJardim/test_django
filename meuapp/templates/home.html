@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h1>Olá, King </h1>
+    {% if mensagem == 'Bom dia' %}
+        <p>Sol quente da poha!</p>
+    {% elif mensagem == 'Boa tarde' %}
+        <p>Agora tá mais quente ainda</p>
+    {% elif mensagem == 'Boa noite' %}
+        <p>Ainda bem que o sol foi embora, naõ  aguentava mais</p>
+    {% else %}
+        <p>Mensagem não reconhecida.</p>
+    {% endif %}
+
+
+{% endblock %}  
+
+
+
+        
